@@ -1,13 +1,13 @@
 File Organizer CLI 📂
 
-A simple command-line tool to automatically organize files in a directory based on their extensions.
+A simple command-line tool to organize files in a directory by extensions. Ideal for Download folders and keeping your workspace clean!
 
 🚀 Features
 
-✔ Automatically moves files into categorized folders based on extensions
-✔ Supports all file types
-✔ Avoids overwriting existing files
-✔ Fast and lightweight
+✔ Categorizes files into folders based on extensions
+✔ Supports all file types automatically
+✔ Prevents overwriting existing files
+✔ Lightweight and fast
 
 
 ---
@@ -16,12 +16,12 @@ A simple command-line tool to automatically organize files in a directory based 
 
 1️⃣ Install via pip (Recommended)
 
-pip install file-organizer-cli
+pip install dirorganizer
 
 2️⃣ Install from Source
 
-git clone https://github.com/yourusername/file-organizer-cli.git
-cd file-organizer-cli
+git clone https://github.com/SudoRV/dirorganizer.git
+cd dirorganizer
 pip install --editable .
 
 
@@ -29,43 +29,38 @@ pip install --editable .
 
 🔧 Usage
 
-Basic Command
-
-To organize files inside a folder:
+Basic Command:
 
 arrange /path/to/folder
 
-Example
+Example:
 
-Before running:
+📂 Before:
 
 Downloads/
 ├── report.pdf
 ├── music.mp3
 ├── photo.jpg
 
-After running:
+📂 After arrange Downloads/
 
 Downloads/
-├── pdf/
-│   ├── report.pdf
-├── mp3/
-│   ├── music.mp3
-├── jpg/
-│   ├── photo.jpg
+├── pdf/   → report.pdf
+├── mp3/   → music.mp3
+├── jpg/   → photo.jpg
 
 
 ---
 
 🛠 Development
 
-If you want to modify this tool, follow these steps:
+To modify the tool, follow these steps:
 
-git clone https://github.com/yourusername/file-organizer-cli.git
-cd file-organizer-cli
+git clone https://github.com/SudoRV/dirorganizer.git
+cd dirorganizer
 pip install --editable .
 
-Now you can test changes by running:
+Test your changes using:
 
 arrange /path/to/folder
 
@@ -81,24 +76,15 @@ This project is licensed under the MIT License.
 
 🤝 Contributing
 
-Feel free to open an issue or submit a pull request! 🚀
+Got ideas or improvements? Feel free to open an issue or submit a pull request! 🚀
 
 
 ---
 
 📌 Notes
 
-Ensure Python 3.6+ is installed.
+Requires Python 3.6+
 
-Run pip uninstall file-organizer-cli to remove the package.
+To uninstall, run:
 
-
-
-file_organizer/
-│── file_organizer/   # Package source folder
-│   ├── __init__.py   # Marks it as a package
-│   ├── organize.py   # Your script
-│── setup.py          # Setup script
-│── README.md         # Project description
-│── LICENSE           # (Optional) License file
-│── requirements.txt  # (Optional) Dependencies
+pip uninstall dirorganizer
